@@ -1,0 +1,14 @@
+<h1>Oh Hai there <%= @message %></h1>
+
+<div class="mdl-grid">
+  <% @products.each do |product| %>
+
+    <div class=" mdl-cell demo-card-event mdl-card mdl-shadow--2dp">
+      <a href="/dp/<%= product.id %>">
+        <%= image_tag product.image %>
+      </a>
+    </div>
+
+  <% end %>
+
+</div>
